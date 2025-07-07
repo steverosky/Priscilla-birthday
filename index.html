@@ -402,6 +402,8 @@
                     // Trigger animation
                     setTimeout(() => {
                         lineDiv.classList.add('visible');
+                        // Auto-scroll to bottom
+                        lineDiv.scrollIntoView({ behavior: 'smooth', block: 'end' });
                     }, 50);
                     
                     currentStep++;
